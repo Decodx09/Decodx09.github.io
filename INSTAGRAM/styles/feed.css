@@ -1,0 +1,22 @@
+.feed-class{
+    margin-top :65px;
+    width : 450px;
+    height : 90px;
+    background-color: white;
+    display: flex;
+    flex-direction : row;
+    align-items: center;
+    border : 1px;
+    border-style : solid;
+    border-color : rgb(210, 210, 210);
+    border-radius : 5px;
+}
+
+.feed-photo{
+    height : 60px;
+    width : 60px;
+    object-fit: cover;
+    border-radius : 30px;
+    margin-left : 15px;
+}
+
