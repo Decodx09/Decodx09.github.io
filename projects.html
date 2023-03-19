@@ -9,51 +9,6 @@
 <body>
 
     <style>
-.button-49,
-.button-49:after {
-  width: 200px;
-  height: 100px;
-  margin-top : 50px;
-  margin-left : 10px;
-  line-height: 78px;
-  font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00E6F6;
-  outline: transparent;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-49:after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'ALTERNATE TEXT';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-  clip-path: var(--slice-0);
-}
-
-.button-49:hover:after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
 
 .h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -61,19 +16,106 @@
     display : flex;
     align-items: center;
 }
+
+.barr{
+            height : 100px;
+            width : 1200px;
+            background-color: rgb(250, 250, 250);
+            margin-left : 110px;
+            display : flex;
+            flex-direction : row;
+            justify-content: center;
+            align-items: center;
+        }
+
+.items{
+    display : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemss{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left : 15px;
+    margin-right : 15px;
+}
+
+.name{
+            margin-right : 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size : 30px;
+            font-weight: bolder;
+        }
+
+
+.letschat1{
+    margin-left : 200px;
+    margin-right : 40px;
+    padding-right : 20px;
+    padding-left : 20px;  
+    padding-top : 10px;     
+    padding-bottom : 10px; 
+    border-style : solid;
+    border-color : black; 
+    background-color : white;
+    color : black;
+}
+
+.button49{
+    width : 200px;
+    height : 200px;
+    border-style : none;
+    margin-left : 10px;
+    margin-right : 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size : larger;
+    color : white;
+}
+
+.gridd{
+    margin-left : 180px;
+    margin-top : 40px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
     </style>
 
-<h1 class="h1">Projects</h1>
-    <a href="INSTAGRAM/homepage.html">
-        <button class="button-49" role="button">Instagram</button>
-    </a>
+<div>
+    <div class="barr">
+        <div class="name">Shivansh</div>
+        <div class="items">
+            <h4 class="itemss">Home</h4>
+            <h4 class="itemss">Works</h4>
+            <h4 class="itemss">About</h4>
+            <h4 class="itemss">Projects</h4>
+            <h4 class="itemss">Services</h4>
+        </div>
+        <div class="letschat">
+            <button class="letschat1">Let's Chat</button>
+        </div>
+    </div>
     
-    <a href="Youtube/homepage.html">
-        <button class="button-49" role="button">Youtube</button>
-    </a>
-    
-    <a href="Myntra/myntra.html">
-        <button class="button-49" role="button">Myntra</button>
-    </a>
+        <div class="gridd">
+            <a href="INSTAGRAM/homepage.html">
+                <button class="button49" role="button" style="background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);">Instagram</button>
+            </a>
+            
+            <a href="Youtube/homepage.html">
+                <button class="button49" role="button" style="background-color: #FFE53B;
+                background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+                ">Youtube</button>
+            </a>
+            
+            <a href="Myntra/myntra.html">
+                <button class="button49" role="button" style="background-image: linear-gradient( 135deg, #A0FE65 10%, #FA016D 100%);">Myntra</button>
+            </a>
+        </div>    
+</div>
 </body>
 </html>
