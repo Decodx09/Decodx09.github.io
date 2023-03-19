@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice</title>
+</head>
+<body style="height : 10000px;
+            padding-top : 60px;
+            padding-left : 80px;">
+    <div style="
+        background-color: black;
+        color : white;
+        position : fixed;
+        top : 0px;
+        left : 0px; 
+        right : 0px;
+        height : 50px;
+        "></div>
+    
+    <div style="
+        position : absolute;
+        background-color: red;
+        color : white;
+        right : 10px;
+        ">Absolute</div>
+
+    <div style="
+        background-color: green;
+        position : fixed;
+        top : 50px;
+        left : 0px;
+        bottom : 0px;
+        width : 80px;
+        ">
+        <div style="
+            background-color: red;
+            position : absolute;
+            top : 0px;
+            right : 0px;
+            font-size : 25px;
+        "> 
+        *           
+        </div>
+        </div>
+
+    <div style="
+        background-color: lightblue;
+        position: relative;
+        height : 150px;
+        width : 250px;
+        margin-bottom: 10px;
+        z-index: -1;
+        ">
+        <div style="
+            background-color: black;
+            color : white;
+            position : absolute;
+            right : 5px;
+            bottom : 5px;
+            ">
+        1 : 10
+        </div></div>
+    <div style="
+        background-color: rgb(228, 228, 167);
+        position : relative;
+        height : 150px;
+        width : 250px;
+        margin-bottom : 10px;
+        z-index: -1;
+        ">
+        <div style="
+            background-color: black;
+            color : white;
+            position : absolute;
+            right : 5px;
+            bottom : 5px;
+        ">
+        10 : 30
+        </div>
+    </div>
+
+    <div style="
+        position : absolute;
+        background-color: black;
+        color : white;
+        top : 100px;
+        right : 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size : 20px;
+        padding-left : 10px;
+        padding-right : 10px;
+        padding-top : 5px;
+        padding-bottom: 5px;
+        border-radius : 20px;
+    ">
+    X
+    </div>
+
+    <div style="
+        position : absolute;
+        background-color: rgb(133, 132, 132);
+        right : 15px;
+        bottom : 10px;
+        height : 200px;
+        width : 250px;
+    ">
+    </div>
+
+    <div style="
+        position : relative;
+        background-color: gray;
+        top : 20px;
+        left : 20px;
+        bottom : 220px;
+        height : 200px;
+        width : 250px;
+    ">
+        <div style="
+            font-family: Arial, Helvetica, sans-serif;
+            position : absolute;
+            background-color: black;
+            color : white;
+            top : -10px;
+            left : -10px;
+            padding-left : 10px;
+            padding-right : 10px;
+            padding-top : 5px;
+            padding-bottom : 5px;
+            border-radius : 20px;
+            ">
+            X
+        </div>
+    </div>
+
+    <div style="
+        position : relative;
+        background-color: gray;
+        top : 40px;
+        left : 20px;
+        bottom : 220px;
+        height : 200px;
+        width : 250px;
+    ">
+        <div style="
+            font-family: Arial, Helvetica, sans-serif;
+            position : absolute;
+            background-color: black;
+            color : white;
+            top : -10px;
+            left : -10px;
+            padding-left : 10px;
+            padding-right : 10px;
+            padding-top : 5px;
+            padding-bottom : 5px;
+            border-radius : 20px;
+            ">
+            X
+        </div>
+
+        <div style="
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight : 500;
+            position : absolute;
+            background-color: black;
+            color : white;
+            right : 5px;
+            bottom : 5px;
+            padding-left : 5px;
+            padding-right : 5px;
+            padding-top : 3px;
+            padding-bottom : 3px;
+        ">
+            3 : 20
+        </div>
+    </div>
+
+    <style>
+        .product{
+            position : relative;
+            height : 250px;
+            width : 250px;
+            display: inline-block;
+        }
+
+        .product-img{
+            height : 250px;
+            width : 250px;
+            object-fit: cover;
+        }
+
+        .product-tag{
+            position : absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            top : 13px;
+            right : 0;
+            background-color: black;
+            color : white;
+            padding-left : 5px;
+            padding-right : 5px;
+            padding-top : 3px;
+            padding-bottom : 3px;
+        }
+    </style>
+
+    <div class="product">
+        <img class="product-img" src="cat.jpeg" alt="">
+        <div class="product-tag">20 % OFF</div>
+    </div>
+
+    <style>
+        .shadow{
+            position: absolute;
+            display : flex;
+            flex-direction : row;
+            justify-content: center;
+            align-items: center;
+            left : 0px;
+            right : 0px;
+            bottom : 0px;
+            top : 180px;
+            background-color: gray;
+            opacity: 0.7;
+        }
+
+        .cart{
+            padding-left : 15px;
+            padding-right : 15px;
+            padding-top : 9px;
+            padding-bottom : 9px;
+            border-style : solid;
+            border : 1px;
+            opacity: 1;
+        }
+
+    </style>
+
+
+    <div class="product">
+        <img class="product-img" src="cat.jpeg" alt="">
+        <div class="product-tag">20 % OFF</div>
+        <div class="shadow">
+            <button class="cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- position absolute inside a position fixed does make a difference  -->
+<!-- position : relative , absolute , fixed , static -->

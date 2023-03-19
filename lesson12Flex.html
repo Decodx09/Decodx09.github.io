@@ -1,0 +1,308 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <style>
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+        }
+        .lightblue{
+            background-color: lightblue;
+        }
+        .lightpink{
+            background-color: lightpink;
+        }
+        .item1{
+            width : 200px;
+        }
+        .item2{
+            width : 75px;
+        }
+    </style>
+    <div class="flexbox">
+        <div class="lightblue item1">200px</div>
+        <div class="lightpink item2">75px</div>
+    </div>
+
+    <style>
+        .flexbox1{
+            margin-top : 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        .lightblue1{
+            background-color: lightblue;
+        }
+        .remainingspace{
+            background-color: lightpink;
+            flex : 1;
+        }
+        .item11{
+            width : 50px;
+        }
+        .item21{
+            width : 75px;
+        }
+    </style>
+
+    <div class="flexbox1">
+        <div class="lightblue1 item11">50px</div>
+        <div class="remainingspace">item2</div>
+        <div class="lightblue1 item21">75px</div>
+    </div>
+
+    <style>
+        .flexbox2{
+            margin-top : 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+    <div class="flexbox2">
+        <div class="lightblue">item1</div>
+        <div class="lightblue">item2</div>
+        <div class="lightblue">item3</div>
+        <div class="lightblue">item3</div>
+    </div>
+
+    <style>
+        .flexbox3{
+            margin-top : 10px;
+            display : flex;
+            flex-direction : row;
+            justify-content: space-between;
+            border-width: 1px;
+            border-style : solid;
+            height : 50px;
+            align-items: center;
+        }
+    </style>
+    <div class="flexbox3">
+        <div class="lightpink">Anushka</div>
+        <div class="lightblue">Shivansh</div>
+    </div>
+
+    <style>
+        div{
+            font-family: Arial;
+        }
+
+        .notification{
+            background-color: blue;
+            color : white;
+            padding-left : 12px;
+            padding-right : 12px;
+            padding-top : 6px;
+            padding-bottom : 6px;
+            border-radius : 20px;
+            align-items: center;
+            display : flex;
+            flex-direction : row;
+            justify-content: space-between;
+        }
+
+        .container{
+            margin-top : 30px;
+            border-width : 1px;
+            border-style : solid;
+            border-color : rgb(200 , 200 , 200);
+            width : 300px;
+            border-radius : 6px;
+        }
+
+        .flex{
+            display : flex;
+            flex-direction : row;
+            justify-content: space-between;
+            align-items: center;
+            padding : 6px 6px 12px 12px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="flex">
+            <div>Home</div>
+            <div class="notification">14</div>
+        </div>
+        <div class="flex">
+            <div>Notification</div>
+            <div class="notification">3</div>
+        </div>
+        <div class="flex">
+            <div>Messages</div>
+            <div class="notification">5</div>
+        </div>
+    </div>
+
+    <style>
+        .row{
+            margin-top : 10px;
+            display: flex;
+            flex-direction : row;
+            align-items: center;
+        }
+        .profile-picture{
+            width : 70px;
+            height : 70px;
+            object-fit: cover;
+            border-radius : 100px;
+            margin-left : 25px;
+            margin-right : 15px;
+        }
+        .info{
+            width : 200px;
+        }
+        .follow{
+            padding-top : 10px;
+            padding-bottom : 10px;
+            padding-left : 15px;
+            padding-right : 15px;
+            border-radius : 1px;
+            background-color: rgb(12, 119, 240);
+            color : white;
+            border-style: solid;
+            border : none;
+            border-radius : 2px;
+            font-weight: bold;
+            font-size : 16px;
+            cursor : pointer;
+        }
+        .name{
+            font-weight : bold;
+            margin-bottom: 3px;
+        }
+        .category{
+            color : rgb(150 , 150 , 150);
+            margin-bottom : 5px;
+        }
+        .handle{
+            color : rgb(150 , 150 , 150);
+            margin-bottom : 5px;
+        }
+    </style>
+
+    <div class="row">
+        <img class="profile-picture" src="cat.jpeg" alt="CaT">
+        <div class="info">
+            <p class="name">Anushka</p>
+            <p class="handle">Sleepy Girl</p>
+            <p class="category">Artist</p>
+        </div>
+        <button class="follow">Follow</button>
+    </div>
+    <div class="row">
+        <img class="profile-picture" src="cat.jpeg" alt="CaT">
+        <div class="info">
+            <p class="name">Anushka</p>
+            <p class="handle">Sleepy Girl</p>
+            <p class="category">Artist</p>
+        </div>
+        <button class="follow">Follow</button>
+    </div>    <div class="row">
+        <img class="profile-picture" src="cat.jpeg" alt="CaT">
+        <div class="info">
+            <p class="name">Anushka</p>
+            <p class="handle">Sleepy Girl</p>
+            <p class="category">Artist</p>
+        </div>
+        <button class="follow">Follow</button>
+    </div>    <div class="row">
+        <img class="profile-picture" src="cat.jpeg" alt="CaT">
+        <div class="info">
+            <p class="name">Anushka</p>
+            <p class="handle">Sleepy Girl</p>
+            <p class="category">Artist</p>
+        </div>
+        <button class="follow">Follow</button>
+    </div>
+
+    <style>
+        .header{
+            margin-top : 10px;
+            margin-left : 10px;
+            display : flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(120, 82, 178);
+            color : white;
+            justify-content: space-between;
+            padding-left : 15px;
+            padding-right : 15px;
+        }
+        .button{
+            padding-top : 8px;
+            padding-bottom : 8px;
+            padding-left : 15px;
+            padding-right : 15px;
+            border-radius : 2px;
+            border-style : solid;
+            border-color : white;
+            background-color: rgb(120, 82, 178);
+            color : white;
+            margin-left : 13px;
+        }
+        .text-box{
+            width : 500px;
+            padding-left: 20px;
+            margin-top : 12px;
+            margin-bottom : 12px;
+            height : 30px;
+            border-radius : 15px;
+            border-style : solid;
+            border : none;
+            flex-shrink: none;
+        }
+        .home-link{
+            color : white;
+            font-weight : bold;
+            margin-right : 20px;
+        }
+    </style>
+    <div class="header">
+        <div class="home-link">Home</div>
+        <input class="text-box" placeholder="Search">
+        <button class="button">Download</button>
+    </div>
+
+    <style>
+        .flex{
+            height : 50px;
+            display : flex;
+            flex-direction : row;
+        }
+        .column1{
+            background-color: lightcyan;
+            width : 100px;
+        }
+        .column2{
+            background-color: rgb(71, 156, 71);
+            width : 200px;
+        }
+    </style>
+    <div class="flex">
+        <div class="column1"></div>
+        <div class="column2"></div>
+    </div>
+
+    <!-- <style>
+        .anand{
+            width : 50px;
+            height : 50px;
+            position : fixed;
+            background-color : red;
+            top : 50;
+            left : 50;
+            transform : translate(-50 , 50);
+        }
+    </style> -->
+
+
+
+</body>
+</html>

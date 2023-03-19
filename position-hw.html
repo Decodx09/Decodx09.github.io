@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-homework</title>
+</head>
+
+<style>
+    .facebook{
+        margin-top : 10px;
+        display : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fb-button{
+        display : flex;
+        flex-direction : row;
+    }
+
+    .cat{
+        height : 50px;
+        width : 50px;
+        object-fit: cover;
+        border-radius : 25px;
+    }
+
+    .add-friend{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        height : 35px;
+        width : 90px;
+        border : none;
+        border-radius : 3px;
+        background-color: rgb(0, 89, 255);
+        color : white;
+    }
+
+    .message{
+        font-family : Arial, Helvetica, sans-serif;
+        font-weight : bold;
+        height : 35px;
+        width : 90px;
+        border : none;
+        border-radius : 3px;
+        background-color: rgba(172, 172, 172, 0.5);
+        margin-left : 10px;
+    }
+
+    .fb-photo{
+        display : flex;
+        flex-direction : row;
+        font-family : Arial, Helvetica, sans-serif;
+        font-weight : bold;
+    }
+    
+</style>
+
+<body>
+    <div class="facebook">
+        <div class="fb-photo">
+            <img class="cat"src="cat.jpeg" alt="cat">
+            <p style="margin-left : 10px;">Iqra Jabeen</p>
+        </div>
+        <div class="fb-button">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+
+    <div class="facebook">
+        <div class="fb-photo">
+            <img class="cat"src="cat.jpeg" alt="cat">
+            <p style="margin-left : 10px;">Iqra Jabeen</p>
+        </div>
+        <div class="fb-button">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+
+    <div class="facebook">
+        <div class="fb-photo">
+            <img class="cat"src="cat.jpeg" alt="cat">
+            <p style="margin-left : 10px;">Iqra Jabeen</p>
+        </div>
+        <div class="fb-button">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+
+    <div class="facebook">
+        <div class="fb-photo">
+            <img class="cat"src="cat.jpeg" alt="cat">
+            <p style="margin-left : 10px;">Iqra Jabeen</p>
+        </div>
+        <div class="fb-button">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+
+    <div class="facebook">
+        <div class="fb-photo">
+            <img class="cat"src="cat.jpeg" alt="cat">
+            <p style="margin-left : 10px;">Iqra Jabeen</p>
+        </div>
+        <div class="fb-button">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+
+    <style>
+        .side-bar{
+            display : flex;
+            flex-direction : row;
+        }
+        .faces{
+            position : fix;
+            left : 0;
+            bottom : 0;
+            width : 50px;
+            background-color: black;
+        }
+    </style>
+
+    <div class="side-bar">
+        <div class="faces"></div>
+        <div class="info"></div>
+    </div>
+</body>
+</html>

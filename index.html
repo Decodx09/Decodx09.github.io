@@ -4,129 +4,244 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
+    <style>
+        .zero{
+            display : flex;
+            flex-direction : row;
+            margin-left : 110px;
+        }
+        .one{
+            height : 700px;
+            width : 600px;
+            background-color : rgb(255, 255, 255);
+        }
+    
+        .two{
+            height : 1000px;
+            width : 600px;
+            background-color : lightcoral;
+        }
 
-<style>
-/* CSS */
-.button-49,
-.button-49:after {
-  width: 200px;
-  height: 100px;
-  line-height: 78px;
-  font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00E6F6;
-  outline: transparent;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
+        .one1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height : 600px;
+            width : 600px;
+            background-color: rgb(255, 255, 255);
+        }
 
-.button-49:after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'ALTERNATE TEXT';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-  clip-path: var(--slice-0);
-}
+        .one2{
+            display : flex;
+            flex-direction : row;
+            height : 100px;
+            width : 600px;
+            background-color: rgb(38, 41, 41);
+        }
 
-.button-49:hover:after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
+        .two1{
+            display : flex;
+            flex-direction : column;
+            height : 700px;
+            width : 600px;
+            background-color: rgb(255, 255, 255);
+        }
 
-@keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-}
+        .two2{
+            height : 300px;
+            width : 600px;
+            display : flex;
+            flex-direction : row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .super{
+            display : flex;
+            flex-direction : row;
+        }
 
-@media (min-width: 768px) {
-  .button-49,
-  .button-49:after {
-    width: 00px;
-    height: 86px;
-    line-height: 88px;
-  }
-}
+        .three1{
+            height : 400px;
+            width : 300px;
+            background-color: aqua;
+        }
 
-</style>
+        .three2{
+            height : 400px;
+            width : 300px;
+            background-color: aquamarine;
+        }
 
-<h1>PROJECTS</h1>
+        .name{
+            margin-right : 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size : larger;
+            font-weight: bolder;
+        }
 
-<!-- HTML !-->
-<a href="INSTAGRAM/homepage.html">
-    <button class="button-49" role="button">Instagram</button>
-</a>
+        .bar{
+            height : 40px;
+            width : 250px;
+            background-color: white;
+            border-style : none;
+            padding-left : 20px;
+        }
 
-<a href="Youtube/homepage.html">
-    <button class="button-49" role="button">Youtube</button>
-</a>
+        .barbutton{
+            border-style : solid;
+            border-color : white;
+            border-width: 4px;
+            padding-left : 10px;
+            padding-right : 10px;
+            padding-top : 9px;
+            padding-bottom: 9px;
+            color : white;
+            background-color: black;
+        }
 
-<a href="Myntra/myntra.html">
-    <button class="button-49" role="button">Myntra</button>
-</a>
+        .barr{
+            height : 100px;
+            width : 1200px;
+            background-color: rgb(224, 117, 135);
+            margin-left : 110px;
+            display : flex;
+            flex-direction : row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items{
+            display : flex;
+            flex-direction : row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .itemss{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left : 15px;
+            margin-right : 15px;
+        }
+
+        .letschat1{
+            margin-left : 200px;
+            margin-right : 40px;
+            padding-right : 20px;
+            padding-left : 20px;  
+            padding-top : 10px;     
+            padding-bottom : 10px; 
+            border-style : solid;
+            border-color : black; 
+            background-color : white;
+            color : black;
+        }
+
+        .heading{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size : 50px;
+            margin-bottom : 0;
+            margin-top : 0;
+        }
+
+        .prof{
+            border-style : none;
+            background-color: rgb(55, 55, 192);
+            color : white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius : 20px;
+            margin-left : 25px;
+            font-size : 15px;
+            padding-left : 20px;
+            padding-right : 20px;
+            padding-top : 0px;
+            padding-bottom : 0px;
+
+        }
+
+        .harami{
+            display : flex;
+            flex-direction : row;
+            justify-content: space-between;
+        }
+
+        .original{
+            margin-top : 200px;
+        }
+
+        .hireme{
+            height : 40px;
+            width : 100px;
+            border-style : none;
+            background-color: orange;
+            color : white;
+            margin-right : 10px;
+        }
+
+        .projects{
+            height : 40px;
+            width : 100px;
+            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-right : 20px;
+            border-style: none;
+            background-color: white;
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="barr">
+        <div class="name">Shivansh</div>
+        <div class="items">
+            <h4 class="itemss">Home</h4>
+            <h4 class="itemss">Works</h4>
+            <h4 class="itemss">About</h4>
+            <h4 class="itemss">Projects</h4>
+            <h4 class="itemss">Services</h4>
+        </div>
+        <div class="letschat">
+            <button class="letschat1">Let's Chat</button>
+        </div>
+    </div>
+    <div class="super">
+        <div class="zero">
+            <div class="one">
+                <div class="one1">
+                    <div class="harami">
+                        <h1 class="heading">Hi! I Am</h1>
+                        <button class="prof">Software Engineer</button>
+                    </div>
+                    <h1 class="heading">Shivansh Sukhija</h1>
+                    <p style="font-family:Arial, Helvetica, sans-serif; margin-top : 40px;">Developing FullStack Appplications for over an Year now</p>
+                    <div class="orignal">
+                        <button class="hireme">Hire me</button>
+                        <a href="projects.html">
+                            <button class="projects">Projects &#8594</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="one2">
+                    <div class="three1"></div>
+                    <div class="three2"></div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="two1">
+                    <img src="shivanshsukhija.jpeg" alt="shivanshsukhija">
+                </div>
+                <div class="two2">
+                    <div class="kutta">
+                        <input class="bar" type="search" placeholder="Subscribe to my Newsletter">
+                        <button class="barbutton">&#8594</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

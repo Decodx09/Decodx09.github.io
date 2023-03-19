@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID's Practice</title>
+</head>
+<body>
+    <style>
+        /* .blue{
+            height : 100px;
+            width : 200px;
+            background-color: blue;
+            display : grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap : 10px;
+            row-gap : 10px;
+            margin-top : 10px;
+        }
+
+        .green{
+            height : 100px;
+            width : 200px;
+            background-color : green;
+            display : grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap : 10px;
+            row-gap : 10px;
+            margin-top : 10px;
+        } */
+
+        .pink{
+            background-color : pink;
+            height :100px;
+            display : grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap : 10px;
+        }
+
+        .orange{
+            background-color: orange;
+            height : 100px;
+            display : grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap : 10px;
+        }
+
+    </style>
+
+    <div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="pink"></div>
+        <div class="orange"></div>
+        <div class="pink"></div>
+        <div class="orange"></div>
+        <div class="pink"></div>
+        <div class="orange"></div>
+        <div class="pink"></div>
+        <div class="orange"></div>
+        <div class="pink"></div>
+        <div class="orange"></div>
+        <div class="pink"></div>
+    </div>
+
+    <div style="
+    margin-top : 30px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap : 10px">
+        <div style="background-color : lightblue;
+        height : 200px;"></div>
+        <div style="background-color: lightcoral; 
+        height : 200px;"></div>
+        <div style="background-color : lightblue;
+        height : 200px;"></div>
+        <div style="background-color: lightcoral; 
+        height : 200px;"></div>
+        <div style="background-color : lightblue;
+        height : 200px;"></div>
+        <div style="background-color: lightcoral; 
+        height : 200px;"></div>
+        <div style="background-color : lightblue;
+        height : 200px;"></div>
+        <div style="background-color: lightcoral; 
+        height : 200px;"></div>
+        <div style="background-color : lightblue;
+        height : 200px;"></div>
+    </div>
+
+    <style>
+        .a{
+            background-color: lightseagreen;
+            height : 100px;
+
+        }
+
+        .b{
+            background-color : lightsalmon;
+            height : 100px;
+        }
+
+        .grid{
+            margin-top : 10px;
+            display : grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            column-gap : 10px;
+            row-gap : 10px;
+        }
+    </style>
+
+    <div class="grid">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="a"></div>
+    </div>
+
+    <style>
+        .myntra-header{
+            height : 80px;
+            display : flex;
+            flex-direction : row;
+            justify-content: space-between;
+            position : fixed;
+            top : 0;
+            left : 0;
+            right : 0;
+            z-index : 100;
+            background-color: white;
+        }
+
+        .left{
+            display : flex;
+            align-items: center;
+            min-width: 250px;
+        }
+
+        .logo{
+            height : 50px;
+            width : 50px;
+            object-fit: cover;
+            justify-content: center;
+            align-items: center;
+            margin-left : 20px;
+            margin-right : 20px;
+        }
+
+        .pages{
+            font-family : Arial, Helvetica, sans-serif;
+            font-weight : 700;
+            font-size : 13px;
+            color : rgb(43, 43, 43);
+            padding-left : 12px;
+        }
+
+        .middle{
+            flex : 1;
+            margin-left : 40px;
+            margin-right : 35px;
+            display : flex;
+            align-items: center;
+        }
+
+        .searchbar{
+            flex : 1;
+            height : 30px;
+            width : 0;
+            padding-left : 10px;
+            max-width: 300px;
+            border : 1px solid rgb(192 , 192 , 192);
+            border-radius : 2px;
+            background-color: rgb(243, 243, 243);
+        }
+
+        .right{
+            width : 100px;
+            margin-right : 20px;
+            display : flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .icon{
+            height : 24px;
+        }
+    </style>
+
+    <div class="myntra-header">
+        <div class="left">
+            <img class="logo" src="myntra.png" alt="">
+            <p class="pages">MEN</p>
+            <p class="pages">WOMEN</p>
+            <p class="pages">KIDS</p>
+            <p class="pages">HOME & LIVING</p>
+            <p class="pages">BEAUTY</p>
+            <p class="pages">STUDIO</p>
+        </div>
+        <div class="middle">
+            <input class="searchbar" type="text" placeholder="Search for products, brands and more">
+        </div>
+        <div class="right">
+            <img class="icon" src="shoppingbag.png" alt="">
+            <img class="icon" src="shoppingbag.png" alt="">
+            <img class="icon" src="shoppingbag.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

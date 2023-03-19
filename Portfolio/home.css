@@ -1,0 +1,71 @@
+.header{
+    height : 85px;
+
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    /* background-color: pink; */
+
+    position : fixed;
+    top : 0;
+    left : 0;
+    right : 0;
+    z-index: 100;
+
+    background-color: white;
+}
+
+.left-section{
+    display : flex;
+    align-items: center;
+    margin-left : 100px;
+}
+
+.right-section{
+    display : flex;
+    align-items: center;
+    margin-right : 100px;
+}
+
+.chat{
+    height : 43px;
+    width : 110px;
+    border-style : solid;
+    border-color: black;
+    background-color: white;
+}
+
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 20px;
+    font-weight: bold;
+}
+
+.main{
+    display : flex;
+    flex-direction : row;
+    background-color: lightcoral;
+    position : fixed;
+}
+
+.left{
+    display : flex;
+    flex-direction : column;
+}
+
+.left1{
+    height : 600px;
+    width : 700px;
+    background-color: rgb(47, 192, 209);
+}
+
+.left2{
+    height : 400px;
+    width : 700px;
+    background-color: lightsalmon;
+}
+
+.right{
+    height : 1000px;
+    background-color: lightgreen;
+}
