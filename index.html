@@ -1,310 +1,401 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hi, I am Shivansh</title>
 </head>
-<body style="background-color: white;">
-    <style>
-        .zero{
-            display : flex;
-            flex-direction : row;
-            margin-left : 110px;
+
+<style>
+    html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .body {
+        background-color: #0f0f0f;
+        color: aliceblue;
+        text-align: center;
+        position: relative;
+        min-height: 100vh;
+        /* overflow: hidden; */
+        height: auto; /* Allow content to determine the height */
+        font-family: sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .banner {
+        position: absolute;
+        top: 25%; /* Position the banner just below the h1 elements */
+        left: -20%; /* Extend the banner out of view for smooth scrolling */
+        width: 140%; /* Long banner to cover the screen at an angle */
+        height: 60px; /* Wider banner */
+        background-color: #4c7ac5; /* Banner color */
+        transform: rotate(-8deg); /* Inclined angle */
+        z-index: 0; /* Place it below the h1 elements */
+        overflow: hidden; /* Prevent text from spilling out */
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .banner-text {
+        white-space: nowrap;
+        color: #ffffff; /* Text color */
+        font-size: 20px; /* Slightly larger font size for better visibility */
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        animation: scroll-banner 20s linear infinite;
+    }
+
+    @keyframes scroll-banner {
+        0% {
+            transform: translateX(100%);
         }
-        .one{
-            height : 700px;
-            width : 600px;
-            background-color : rgb(255, 255, 255);
+        100% {
+            transform: translateX(-100%);
         }
+    }
+
+    .one {
+        color: #2dd64c;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2; /* Ensure h1 elements are above the banner */
+        margin-top : 0px;
+        /* background-color: lightblue; */
+    }
+
+    h1 {
+        margin: 10px 0;
+    }
+
+    h1:first-child {
+        font-size: 200px;
+    }
+
+    h1:last-child {
+        font-size: 200px;
+    }
+
+    @property --k {
+        syntax: "<number>";
+        initial-value: 0;
+        inherits: false;
+    }
+
+    h1 {
+        --k: 0;
+        background: linear-gradient(90deg, hsl(calc(var(--k)*1turn), 95%, 65%), hsl(calc(var(--k)*1turn + 90deg), 95%, 65%)) text;
+        color: transparent;
+        font-weight: 900;
+        font-family: sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        animation: k 4s linear infinite;
+    }
+
+    @keyframes k {
+        to {
+            --k: 1.3;
+        }
+    }
+
+    .text{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 35px;
+        font-weight: 500;
+        position: relative;
+        margin-top : 100px;
+        margin-bottom : 50px;
+        color: #eaeaea;
+    }
+
+    .box{
+        margin-top : 300px;
+        height: 300px;
+        width : 125%;
+        position: relative;
+        left: -20%; /* Extend the banner out of view for smooth scrolling */
+        background-color: #416e90;
+        transform: rotate(5deg);
+        overflow: hidden; /* Prevent text from spilling out */
+        display : flex;
+        flex-direction : row;
+    }
+
+    .something{
+        margin-top : 400px;
+        height : 600px;
+        width : 100%;
+        position: relative;
+        /* background-color: rgb(84, 126, 169); */
+        font-family: sans-serif;
+        font-weight:lighter;
+        font-size : large;
+        overflow: hidden;
+        display : flex;
+        flex-direction : column;
+        justify-content : center;
+        align-items : center;
+    }
+
+    .foot{
+        margin-top : 35px;
+        margin-left : 400px;
+        font-weight: bolder;
+        font-size : x-large;
+    }
+
+    .foot1{
+        margin-top : 35px;
+        margin-left : 500px;
+        font-weight: bolder;
+        font-size : x-large;
+        display : flex;
+        flex-direction : row;
+    }
     
-        .two{
-            height : 1000px;
-            width : 600px;
-            background-color : rgb(255, 255, 255);
-        }
+    .experience{
+        border-style: none;
+        border-radius: 30px;
+        height : 50px;
+        width : 140px;
+        border-color: none;
+        opacity: 0.5;
+        color : black;
+        margin-bottom : 10px;
+        font-size: 14;
+    }
 
-        .one1{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height : 700px;
-            width : 600px;
-            background-color: rgb(255, 255, 255);
-        }
+    .tech{
+        margin-top : 30px;
+        margin-left : -40px;
+        display: flex; /* Enables flexbox */
+        justify-content: center; /* Centers children horizontally */
+        align-items: center; /* Centers children vertically */
+        /* background-color: lightcoral; */
+    }
 
-        .one2{
-            display : flex;
-            flex-direction : row;
-            height : px;
-            width : 600px;
-            background-color: rgb(38, 41, 41);
-        }
+    .tech1{
+        height: 120px;
+        width: 220px;
+        margin-top : 50px;
+        margin-left : 50px;
+        /* background-color: lightblue; */
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .two1{
-            display : flex;
-            flex-direction : column;
-            height : 700px;
-            width : 600px;
-            background-color: rgb(255, 255, 255);
-        }
+    .text-line{
+        margin-top : 20px;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
 
-        .two2{
-            height : 300px;
-            width : 600px;
-            display : flex;
-            flex-direction : row;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-        }
+    .projects{
+        margin-top : 250px;
+        height : 500px;
+        width : 100%;
+        position: relative;
+        background-color: rgb(33, 32, 32);
+        font-family: sans-serif;
+        font-weight:lighter;
+        font-size : large;
+        overflow: hidden;
+        display : flex;
+        flex-direction : row;
+        justify-content : center;
+        align-items : center;
+        overflow: visible;
+    }
 
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-        
-        .super{
-            display : flex;
-            flex-direction : row;
-        }
+    .img{
+        height : 125px;
+        width : 150px;
+        object-fit: fill;
+    }
 
-        .three1{
-            height : 300px;
-            width : 300px;
-            background-color: rgb(0, 0, 0);
-            display : flex;
-            flex-direction : column;
-            justify-content: center;
-            align-items: flex-start;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+    .img1{
+        margin-top : 80px;
+        height : 60px;
+        width : 140px;
+        object-fit: fill;
+    }
 
-        .three2{
-            height : 300px;
-            width : 300px;
-            background-color: rgb(0, 0, 0);
-            display : flex;
-            flex-direction : column;
-            justify-content: center;
-            align-items: center;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+    .email{
+        height : 400px;
+        width : 400px;
+        background-color: rgb(223, 70, 103);
+        border-radius : 100%;
+        margin-bottom : 10px;
+        margin-top : 20px;
+        display : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-right : 150px;
+    }
 
-        .name{
-            margin-right : 200px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size : 30px;
-            font-weight: bolder;
-        }
+    .email1{
+        font-size : 40px;
+        font-weight: bolder;
+    }
 
-        .bar{
-            height : 43px;
-            width : 400px;
-            background-color: white;
-            border-style : none;
-            padding-left : 20px;
-        }
+    .email2{
+        font-size : 28px;
+        margin-top : 10px;
+    }
 
-        .barbutton{
-            border-style : solid;
-            border-color : white;
-            border-width: 4px;
-            padding-left : 10px;
-            padding-right : 10px;
-            padding-top : 9px;
-            padding-bottom: 9px;
-            color : white;
-            background-color: black;
-        }
+    .career{
+        /* background-color: lightcyan; */
+        display : flex;
+        flex-direction : column;
+        overflow: visible;
+    }
 
-        .barr{
-            height : 100px;
-            width : 1200px;
-            background-color: rgb(250, 250, 250);
-            margin-left : 110px;
-            display : flex;
-            flex-direction : row;
-            justify-content: center;
-            align-items: center;
-        }
+    .career1{
+        height : 250px;
+        width : 700px;
+        background-color: rgb(215, 215, 215);
+        border-radius : 10px;
+        margin-top : 10px;
+        overflow: visible;
+        opacity: 0.4;
+    }
 
-        .items{
-            display : flex;
-            flex-direction : row;
-            justify-content: center;
-            align-items: center;
-        }
+    .left{
+        height : 100%;
+        width : 50%;
+        background-color: lightgrey;
+        border-radius : 10px 0px 0px 10px;
+        float : left;
+        overflow: visible;
+    }
 
-        .itemss{
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left : 15px;
-            margin-right : 15px;
-        }
+    .email-link {
+        color: inherit; /* Inherit the parent's text color */
+        text-decoration: none; /* Remove underline */
+    }
 
-        .letschat1{
-            margin-left : 200px;
-            margin-right : 40px;
-            padding-right : 20px;
-            padding-left : 20px;  
-            padding-top : 10px;     
-            padding-bottom : 10px; 
-            border-style : solid;
-            border-color : black; 
-            background-color : white;
-            color : black;
-        }
+    .email-link:hover {
+        color: #d7b33f; /* Optional: Change color on hover */
+    }
 
-        .heading{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size : 50px;
-            margin-bottom : 0;
-            margin-top : 0;
-        }
+    .left{
+        height : 100%;
+        width : 25%;
+        background-color: rgb(128, 128, 128);
+        border-radius : 10px 0px 0px 10px;
+        float : left;
+        overflow: visible;
+    }
 
-        .prof{
-            border-style : none;
-            background: rgb(131,58,180);
-            background-color: #0093E9;
-            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    .right{
+        width : 100%;
+        background-color: lightgreen;
+        border-radius : 0px 10px 10px 0px;
+        float : right;
+        overflow: visible;
+    }
+</style>
 
-            color : white;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            border-radius : 20px;
-            margin-left : 14px;
-            font-size : 15px;
-            padding-left : 39px;
-            padding-right : 41px;
-            padding-top : 0px;
-            padding-bottom : 0px;
-            text-align: left;
-        }
+<body class="body">
+    <div class="one">
+        <div class="text">Hi, I am Shivansh. it's nice to see you here.</div>
+        <h1 style="font-size: 50px;">Here we turn your ideas into</h1>
+        <h1>REALITY</h1>
+    </div>
 
-        .harami{
-            display : flex;
-            flex-direction : row;
-            justify-content: space-between;
-        }
+    <div class="banner">
+        <div class="banner-text">because life's too short for boring designs ~ bbecause life's too short for boring designs ~ because life's too short for boring designs ~ because life's too short for boring designs ~</div>
+    </div>
 
-        .original{
-            margin-top : 200px;
-            margin-right : 199px;
-        }
-
-        .hireme{
-            height : 50px;
-            width : 100px;
-            border-style : none;
-            background-color: rgb(247, 126, 33);
-            color : white;
-            margin-right : 100px;
-            margin-left : 0px;
-            font-weight : bold;
-        }
-
-        .projects{
-            height : 50px;
-            width : 100px;
-            font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            border-style: none;
-            background-color: white;
-            font-weight: bold;
-            margin-right : 100px;
-            margin-left : 0px;
-        }
-
-        .projects:hover{
-            background-color : rgb(185, 185, 185);
-        }
-
-        .kaam{
-            color : white;
-            font-weight : bolder;
-            margin-left : 90px;
-        }
-
-        .kaam3{
-            color : white;
-        }
-
-        .knowmore{
-            width : 100px;
-            height : 50px;
-            border-style : solid;
-            color : white;
-            background-color: goldenrod;
-        }
-
-        .contactsomething{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight : bold;
-            display : flex;
-            flex-direction : column;
-            margin-top : 50px;
-            margin-bottom : 0;
-            margin-right : 180px;
-        }
-    </style>
-
-    <div class="barr">
-        <div class="name">Shivansh</div>
-        <div class="items">
-            <h4 class="itemss">Home</h4>
-            <h4 class="itemss">Works</h4>
-            <h4 class="itemss">About</h4>
-            <h4 class="itemss">Projects</h4>
-            <h4 class="itemss">Services</h4>
+    <div class="something">
+        <button class="experience">Experience</button>
+        <div class="text-line">The skills, tools and technologies I am good with</div>
+        <div class="tech">
+            <div class="tech1">
+                <img class="img" src="golang_dark.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="nodejs.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="mysql.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="mongodb.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="aws_dark.svg" alt="">
+            </div>
         </div>
-        <div class="letschat">
-            <button class="letschat1">Let's Chat</button>
+        <div class="tech">
+            <div class="tech1">
+                <img class="img" src="github-dark.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="bash_dark.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="redis.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="kubernetes.svg" alt="">
+            </div>
+            <div class="tech1">
+                <img class="img" src="docker.svg" alt="">
+            </div>
         </div>
     </div>
-    <div class="super">
-        <div class="zero">
-            <div class="one">
-                <div class="one1">
-                    <div class="harami">
-                        <h1 class="heading">Hi! I Am</h1>
-                        <button class="prof">Software Engineer</button>
-                    </div>
-                    <h1 class="heading">Shivansh Sukhija</h1>
-                    <p style="font-family:Arial, Helvetica, sans-serif; margin-top : 40px; margin-bottom : 40px">Developing FullStack Appplications for over an Year now</p>
-                    <div class="orignal">
-                        <button class="hireme">Hire me</button>
-                        <a href="projects.html">
-                            <button class="projects">Projects &#8594</button>
-                        </a>
-                    </div>
-                    <div class="contactsomething">
-                        <h3 style="margin-bottom : 0;">Contact</h3>
-                        <p>sukhija.shivansh@gmail.com</p>
-                        <h3 style="margin-bottom : 0">Projects Done</h3>
-                        <p>9</p>
-                    </div>
+
+    <div class="projects">
+        <div class="email">
+            <div class="email1">Let's Talk!</div>
+            <a href="mailto:sukhija.shivansh@gmail.com" class="email-link">
+                <div class="email2">Send mail</div>
+            </a>
+        </div>
+        <div class="career">
+            <div class="career1">
+                <div class="left">
+                    <div class="left1"></div>
+                    <div class="left2"></div>
                 </div>
-                <div class="one2">
-                    <div class="three1">
-                        <p class="kaam">Web Designs</p>
-                        <p class="kaam">RESTful API Designs</p>
-                        <p class="kaam">Unity Prefab Designs</p>
-                    </div>
-                    <div class="three2">
-                        <h3 class="kaam3">PROJECT STATISTICS 2023</h3>
-                        <button class="knowmore">Know More</button>
-                    </div>
+                <div class="right"></div>
+            </div>
+            <div class="career1">
+                <div class="left">
+                    <div class="left1"></div>
+                    <div class="left2"></div>
+                </div>     
+                <div class="right">
+                    <div class="right1"></div>
+                    <div class="right1"></div>
                 </div>
             </div>
-            <div class="two">
-                <div class="two1">
-                    <img src="shivanshsukhija.jpeg" alt="shivanshsukhija">
+            <div class="career1">
+                <div class="left">
+                    <div class="left1"></div>
+                    <div class="left2"></div>
                 </div>
-                <div class="two2">
-                    <div class="kutta">
-                        <input class="bar" type="search" placeholder="Subscribe to my Newsletter">
-                        <button class="barbutton">&#8594</button>
-                    </div>
-                </div>
+                <div class="right"></div>
             </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="foot1">
+            <img class="img1" src="x_dark.svg" alt="">
         </div>
     </div>
 </body>
